@@ -1,0 +1,219 @@
+<!doctype html>
+<html lang="fr">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Rémy Barranco — Capitaine 200 et marin professionnel. Skipper, chef de bord NUC, convoyage, excursions et opportunités d'embarquement.">
+  <meta name="theme-color" content="#162635">
+  <meta name="robots" content="index,follow">
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Rémy Barranco — Skipper | Capitaine 200">
+  <meta property="og:description" content="Skipper, chef de bord NUC, convoyage et marin professionnel. Prestations maritimes et recherche d'embarquement.">
+  <meta property="og:image" content="assets/hero-sunset.jpg">
+  <title>Rémy Barranco — Skipper | Capitaine 200</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<a class="skip-link" href="#main-content">Aller au contenu</a>
+<header class="site-header">
+  <a class="brand" href="#accueil" aria-label="Accueil Rémy Barranco">
+    <img src="assets/logo-header-white.png" alt="Rémy Barranco — Skipper">
+  </a>
+  <button class="menu-toggle" aria-label="Ouvrir le menu" aria-expanded="false" aria-controls="main-navigation">☰</button>
+  <nav class="nav" id="main-navigation" aria-label="Navigation principale">
+    <a href="#prestations">Prestations</a>
+    <a href="#tarification">Tarification</a>
+    <a href="#experience">Expérience</a>
+    <a href="#recrutement">Recrutement</a>
+    <a href="#apropos">À propos</a>
+    <a href="#avis">Avis</a>
+      <a href="#contact">Contact</a>
+  </nav>
+</header>
+
+<main id="main-content">
+<section id="accueil" class="hero">
+  <div class="hero-overlay"></div>
+  <div class="hero-content">
+    <p class="eyebrow">CAPITAINE 200 • MARIN PROFESSIONNEL</p>
+    <h1>NAVIGUER<br>AVEC EXIGENCE.</h1>
+    <p class="hero-name">Rémy Barranco — Skipper</p>
+    <p class="hero-services">Convoyage • Chef de bord NUC • Missions maritimes • Excursions</p>
+    <div class="hero-actions">
+      <a class="btn btn-primary" href="#prestations">Besoin d'un prestataire ?</a>
+      <a class="btn btn-ghost" href="#recrutement">Vous recrutez ?</a>
+    </div>
+  </div>
+</section>
+
+<section id="prestations" class="section">
+  <div class="section-heading">
+    <p class="eyebrow copper">PRESTATIONS</p>
+    <h2>Un professionnel à bord,<br>selon votre mission.</h2>
+    <p>Des interventions ponctuelles ou régulières, avec une approche rigoureuse de la navigation, de la sécurité et du service à bord.</p>
+  </div>
+  <div class="cards four">
+    <article class="card"><span>01</span><h3>Skipper • Capitaine 200</h3><p>Prise en charge de votre navire à moteur pour des missions ponctuelles ou régulières. Pilotage, conduite du navire, manœuvres, navigation et gestion courante de la mission.</p></article>
+    <article class="card"><span>02</span><h3>Convoyage</h3><p>Convoyage de navires à moteur en tant que skipper, marin ou équipier. Navigation côtière ou hauturière, quarts de jour et de nuit, manœuvres et participation à la vie du bord.</p></article>
+    <article class="card"><span>03</span><h3>Chef de bord NUC</h3><p>Chef de bord pour activités professionnelles et missions maritimes. Conduite du navire, accueil et sécurité des personnes embarquées, préparation de la navigation et réalisation de la mission.</p></article>
+    <article class="card"><span>04</span><h3>Excursions • Tourisme maritime</h3><p>Expérience de terrain dans les excursions commentées, l'observation des cétacés, le bassin de Thau, les canaux de Sète, la côte agathoise et les sorties événementielles.</p></article>
+  </div>
+</section>
+
+<section id="tarification" class="section section-dark">
+  <div class="section-heading"><p class="eyebrow copper">TARIFICATION</p><h2>Estimer une mission</h2><p>Décrivez la mission. Le simulateur utilise les informations utiles au classement et au calcul ; lorsqu’un cas ne peut pas être déterminé avec certitude, il vous propose une étude personnalisée.</p></div>
+  <form id="pricing-simulator" class="sim-form">
+    <div class="sim-step"><label for="service-type">Quel est votre besoin ?</label><select id="service-type" required><option value="">Sélectionnez</option><option value="nuc">Chef de bord NUC</option><option value="convoyage-skipper">Convoyage — Skipper sur bateau à moteur</option><option value="convoyage-crew">Convoyage — Équipier sur tout type de bateau</option><option value="matelot">Équipier / Matelot</option><option value="other">Autre type de poste ou de mission</option></select><div id="service-hint" class="sim-help"></div></div>
+    <div id="other-description-wrap" class="sim-step sim-hidden"><label for="other-description">Décrivez brièvement la mission ou le poste proposé</label><textarea id="other-description" rows="4" placeholder="Fonction, navire, activité ou particularité utile..."></textarea></div>
+    <div id="sector-wrap" class="sim-step sim-hidden"><label for="sector">Secteur d'activité du navire</label><select id="sector"><option value="">Sélectionnez</option><option value="commerce">Commerce</option><option value="plaisance">Plaisance professionnelle</option><option value="peche">Pêche</option><option value="cultures">Cultures marines</option><option value="remorquage">Remorquage / Pilotage / Lamanage</option><option value="travaux">Travaux maritimes</option><option value="unknown">Autre / Je ne sais pas</option></select><p class="sim-help">Cette information figure généralement sur le permis d’armement. Le moteur couvre également les secteurs pêche, cultures marines, remorquage / pilotage / lamanage et travaux maritimes lorsque le tableau fourni permet un classement univoque.</p></div>
+    <div id="navigation-wrap" class="sim-step sim-hidden"><label for="navigation">Genre de navigation</label><select id="navigation"><option value="">Sélectionnez</option><option value="cotiere">Navigation côtière</option><option value="cabotage-national">Cabotage national</option><option value="cabotage-international">Cabotage international</option><option value="long-cours">Long cours</option><option value="unknown">Autre / Je ne sais pas</option></select><p class="sim-help">Sélectionnez le genre indiqué sur le permis d’armement.</p></div>
+    <div id="vessel-type-wrap" class="sim-step sim-hidden"><label for="vessel-type">Type de navire</label><select id="vessel-type"><option value="">Sélectionnez</option><option value="passagers">Navire à passagers</option><option value="charge">Navire de charge</option><option value="plaisance">Navire de plaisance professionnelle</option><option value="autre">Autre / Je ne sais pas</option></select></div>
+    <div id="function-wrap" class="sim-step sim-hidden"><label for="function">Fonction prévue à bord</label><select id="function"></select><p class="sim-help">La fonction réellement occupée est utilisée : une tâche effectuée à bord ne suffit pas à changer de fonction. Les fonctions non déterminables avec certitude sont transmises pour étude plutôt que classées par approximation.</p></div>
+    <div id="special-vessel-wrap" class="sim-step sim-hidden"><label for="special-vessel">Type précis de navire</label><select id="special-vessel"><option value="">Sélectionnez</option></select><p class="sim-help">Demandé uniquement lorsque le tableau de classement distingue plusieurs types de navires.</p></div>
+    <div id="power-wrap" class="sim-step sim-hidden"><label for="power-kw">Puissance administrative du navire (kW)</label><input id="power-kw" type="number" min="0" step="1" placeholder="Ex. 450"><p class="sim-help">Utilisée uniquement lorsque le classement dépend d’un seuil de puissance.</p></div>
+    <div id="gauge-wrap" class="sim-step sim-hidden"><label for="gauge">Jauge brute du navire</label><select id="gauge"><option value="">Sélectionnez</option><option value="lt4">Moins de 4 UMS</option><option value="4-10">4 à moins de 10 UMS</option><option value="10-15">10 à moins de 15 UMS</option><option value="15-30">15 à 30 UMS</option><option value="30-35">Plus de 30 à 35 UMS</option><option value="35-50">Plus de 35 à 50 UMS</option><option value="gt50">Plus de 50 UMS</option><option value="unknown">Je ne sais pas</option></select><p class="sim-help">La même jauge est réutilisée pour le classement et les cotisations.</p></div>
+    <div id="contrib-wrap" class="sim-step sim-hidden"><h3>Caractéristiques complémentaires du navire</h3><p class="sim-help">Ces renseignements ne sont demandés que lorsqu’ils sont nécessaires au calcul des cotisations. Le simulateur détermine lui-même le régime applicable.</p><div id="francisation-wrap" class="nested"><label for="francisation-era">Première francisation / mise en service du navire</label><select id="francisation-era"><option value="">Sélectionnez</option><option value="pre1986">Avant 1986</option><option value="post1986">Depuis 1986</option><option value="unknown">Je ne sais pas</option></select></div><div id="owner-wrap" class="nested"><label for="owner-onboard">Le propriétaire du navire est-il embarqué comme marin pendant la mission ?</label><select id="owner-onboard"><option value="">Sélectionnez</option><option value="yes">Oui</option><option value="no">Non</option><option value="unknown">Je ne sais pas</option></select></div><div id="length-wrap" class="nested"><label for="length-band">Longueur du navire</label><select id="length-band"><option value="">Sélectionnez</option><option value="le12">12 m ou moins</option><option value="12-25">Plus de 12 à 25 m</option><option value="gt25">Plus de 25 m</option><option value="unknown">Je ne sais pas</option></select></div></div>
+    <div id="location-wrap" class="sim-step sim-hidden"><label for="departure">Port / lieu de départ</label><input id="departure" type="text" autocomplete="off"><label class="check-line"><input id="different-arrival" type="checkbox"><span>Le port / lieu d’arrivée est différent du lieu de départ</span></label><div id="arrival-wrap" class="sim-hidden nested"><label for="arrival">Port / lieu d’arrivée</label><input id="arrival" type="text" autocomplete="off"></div></div>
+    <div id="duration-wrap" class="sim-step sim-hidden"><label for="duration-mode">Organisation de la mission</label><select id="duration-mode"><option value="">Sélectionnez</option><option value="punctual">Mission ponctuelle — à partir d’une heure</option><option value="days">Mission sur plusieurs jours — retour possible entre chaque journée</option><option value="continuous">Mobilisation continue — sans retour au domicile</option></select></div>
+    <div id="punctual-wrap" class="sim-step sim-hidden"><div class="sim-grid"><label>Date<input id="p-date" type="date"></label><label>Heure de début<input id="p-start" type="time"></label><label>Durée (heures)<input id="p-hours" type="number" min="1" step="0.5" placeholder="8"></label></div></div>
+    <div id="days-wrap" class="sim-step sim-hidden"><div class="sim-grid"><label>Premier jour<input id="d-start" type="date"></label><label>Nombre de jours travaillés<input id="d-count" type="number" min="1" step="1" placeholder="3"></label><label>Heures facturées par jour<input id="d-hours" type="number" min="1" step="0.5" placeholder="8"></label></div><p class="sim-help">Chaque journée est considérée séparément, avec retour possible entre les journées.</p></div>
+    <div id="continuous-wrap" class="sim-step sim-hidden"><div class="sim-grid"><label>Début<input id="c-start-date" type="date"><input id="c-start-time" type="time"></label><label>Fin<input id="c-end-date" type="date"><input id="c-end-time" type="time"></label></div><p class="sim-help">La mobilisation continue est comptée entre le début et la fin indiqués. Pour une mission longue, le résultat reste un tarif de référence et peut être adapté.</p></div>
+    <div id="extras-wrap" class="sim-step sim-hidden"><h3>Informations utiles pour le devis</h3><label>Le prestataire sera-t-il logé pendant toute la durée de la mission ?<select id="lodging"><option value="">Sélectionnez</option><option>Oui, à bord du navire</option><option>Oui, hébergement fourni par le client</option><option>Aucun hébergement nécessaire</option><option>Hébergement à prévoir</option><option>Je ne sais pas encore</option></select></label><label>Les repas / l’avitaillement du prestataire seront-ils pris en charge pendant la mission ?<select id="meals"><option value="">Sélectionnez</option><option>Oui</option><option>Aucune prise en charge nécessaire</option><option>Non, à prévoir</option><option>Je ne sais pas encore</option></select></label><label>Une contrainte ou dépense particulière à signaler ?<textarea id="constraints" rows="3"></textarea></label></div>
+    <div id="actions-wrap" class="sim-actions sim-hidden"><button type="button" id="calculate" class="btn btn-primary">Calculer mon estimation</button></div>
+    <div id="result" class="sim-result sim-hidden" aria-live="polite"></div>
+  </form>
+  <div class="special-request"><h3>Le résultat ne correspond pas à votre situation ?</h3><p>Si la mission est particulière ou si le simulateur ne permet pas de la déterminer correctement, contactez-moi : nous pouvons étudier votre besoin et réaliser la simulation ensemble.</p><a class="btn btn-primary" href="#contact">Me contacter pour une simulation</a></div>
+</section>
+
+<section id="experience" class="section">
+  <div class="section-heading">
+    <p class="eyebrow copper">EXPÉRIENCE</p>
+    <h2>Une expérience maritime polyvalente</h2>
+    <p>Du transport maritime à la conduite de NUC, du convoyage à la croisière, mon parcours m'a permis d'évoluer sur différents types de navires et de missions.</p>
+  </div>
+  <div class="experience-grid">
+    <figure class="photo-card"><img src="assets/navigation-action.jpg" alt="Navigation à bord d'un semi-rigide"><figcaption><b>Chef de bord & tourisme maritime</b><small>2026 — Bassin de Thau • Sète • Côte agathoise</small></figcaption></figure>
+    <article class="experience-card"><p class="year">2026</p><h3>Navigation & convoyage</h3><p>Convoyage en Méditerranée, quarts de jour et de nuit, manœuvres et vie du bord.</p></article>
+    <article class="experience-card"><p class="year">2022 — 2026</p><h3>Marine marchande</h3><p>Quarts passerelle, manœuvres, sûreté, sécurité, entretien, passagers et travail en équipage sur ferries.</p></article>
+    <figure class="photo-card"><img src="assets/rib-action.jpg" alt="Semi-rigide professionnel en navigation"><figcaption><b>Croisière & navires à passagers</b><small>Méditerranée</small></figcaption></figure>
+  </div>
+  <p class="experience-close"><strong>Des environnements différents. Une même exigence à bord.</strong><br>Navigation • Manœuvre • Sécurité • Passagers • Travail en équipage</p>
+</section>
+
+<section id="recrutement" class="section recruitment">
+  <div class="split">
+    <div>
+      <p class="eyebrow copper">RECRUTEMENT</p>
+      <h2>Vous recrutez ?</h2>
+      <p class="lead">Disponible pour de nouvelles opportunités d'embarquement.</p>
+      <p>Capitaine 200 et marin professionnel, je recherche également des embarquements salariés en CDD, CDI ou contrat saisonnier.</p>
+      <div class="roles">
+        <span>Capitaine 200 / Skipper</span><span>Chef de bord NUC</span><span>Matelot</span><span>Équipier de convoyage</span>
+      </div>
+      <div class="actions">
+        <a class="btn btn-primary" href="assets/CV-Remy-Barranco.pdf" target="_blank" rel="noopener">Consulter mon CV</a>
+        <a class="btn btn-outline" href="#contact">Me contacter</a>
+      </div>
+    </div>
+    <div class="qualifications">
+      <h3>Brevets & qualifications</h3>
+      <div class="qual-grid">
+        <span>Capitaine 200</span><span>CRO</span><span>Mécanicien 250 kW</span><span>CFBS</span>
+        <span>CAEERS • CAECSR</span><span>NAVPAX-ROPAX</span>
+            <span>Médical II • jusqu’à 200 NM</span><span>Sûreté maritime</span><span>Marin qualifié pont</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="apropos" class="section about">
+  <div class="about-photo"><img src="assets/portrait-remy.jpg" alt="Rémy Barranco, skipper et Capitaine 200"></div>
+  <div class="about-copy">
+    <p class="eyebrow copper">À PROPOS</p>
+    <h2>La mer est devenue mon métier après avoir longtemps été une passion.</h2>
+    <p>Après plus de quatorze années en Gendarmerie nationale, j'ai choisi de me reconvertir professionnellement dans le maritime.</p>
+    <p>Depuis, mon parcours m'a conduit de la navigation de commerce à la plaisance professionnelle, en passant par la croisière, le convoyage et la conduite de navires à passagers.</p>
+    <p>Aujourd'hui Capitaine 200, j'exerce aussi bien comme marin salarié que comme marin non salarié pour des missions ponctuelles.</p>
+    <p>Habitué au travail en équipage comme à la responsabilité de chef de bord, j'accorde une importance particulière à la sécurité, à la rigueur et à la qualité de l'expérience proposée aux passagers.</p>
+  </div>
+</section>
+
+<section class="quote-section">
+  <img src="assets/chart-navigation.jpg" alt="Carte marine et instruments de navigation">
+  <blockquote>« Préparer. Naviguer. Anticiper. »</blockquote>
+</section>
+
+
+<section class="reviews section" id="avis">
+  <div class="container">
+    <p class="eyebrow">RECOMMANDATIONS</p>
+    <h2>Ils m’ont fait confiance</h2>
+    <p class="section-intro">Vous avez travaillé avec moi ou fait appel à mes services ? Vous pouvez partager votre expérience.</p>
+
+    <div class="reviews-empty">
+      <p>Les premières recommandations seront prochainement publiées ici.</p>
+    </div>
+
+    <div class="review-form-card">
+      <h3>Laisser un avis</h3>
+      <form id="review-form">
+        <div class="review-form-grid">
+          <label>Nom
+            <input type="text" name="name" placeholder="Votre nom">
+          </label>
+          <label>Entreprise
+            <input type="text" name="company" placeholder="Nom de l’entreprise">
+          </label>
+          <label>Fonction
+            <input type="text" name="role" placeholder="Votre fonction">
+          </label>
+          <label>Mission / contexte
+            <input type="text" name="context" placeholder="Ex. Chef de bord NUC">
+          </label>
+        </div>
+        <label>Note
+          <select name="rating" required>
+            <option value="">Choisir une note</option>
+            <option value="5">★★★★★ — 5/5</option>
+            <option value="4">★★★★☆ — 4/5</option>
+            <option value="3">★★★☆☆ — 3/5</option>
+            <option value="2">★★☆☆☆ — 2/5</option>
+            <option value="1">★☆☆☆☆ — 1/5</option>
+          </select>
+        </label>
+        <label>Votre avis
+          <textarea name="review" rows="5" required placeholder="Partagez votre expérience…"></textarea>
+        </label>
+        <p class="review-note">Indiquez au minimum votre nom ou votre entreprise. Votre avis sera vérifié avant publication.</p>
+        <button class="btn btn-primary" type="submit">Envoyer mon avis</button>
+        <p class="review-status" aria-live="polite"></p>
+      </form>
+    </div>
+  </div>
+</section>
+
+<section class="section" id="clientele-pro"><div class="section-heading"><p class="eyebrow copper">PRESTATIONS PROFESSIONNELLES</p><h2>Prestations réservées aux professionnels</h2><p>Les prestations facturées par Rémy Barranco – Skipper dans le cadre de son activité indépendante sont exclusivement proposées à des clients agissant pour les besoins de leur activité professionnelle. L’utilisation du simulateur ou l’envoi d’une demande ne constitue ni un devis ni la conclusion d’un contrat.</p></div></section>
+
+<section id="contact" class="section contact">
+  <div class="section-heading">
+    <p class="eyebrow copper">CONTACT</p>
+    <h2>Parlons de votre projet</h2>
+    <p>Besoin d'un skipper, d'un marin pour un convoyage ou d'un chef de bord dans le cadre de votre activité professionnelle ? Vous souhaitez me proposer un embarquement salarié ? Contactez-moi directement.</p>
+  </div>
+  <div class="contact-grid">
+    <div class="contact-item"><small>TÉLÉPHONE</small><strong id="phone">+33 6 98 05 24 79</strong><div><button class="copy" data-copy="+33698052479">Copier</button><a href="tel:+33698052479">Appeler</a></div></div>
+    <div class="contact-item"><small>E-MAIL</small><strong id="email">remy.barranco@hotmail.com</strong><div><button class="copy" data-copy="remy.barranco@hotmail.com">Copier</button><a href="mailto:remy.barranco@hotmail.com?subject=Demande%20de%20prestation%20-%20Rémy%20Barranco%20Skipper">Prestation</a><a href="mailto:remy.barranco@hotmail.com?subject=Proposition%20d%27embarquement">Recrutement</a></div></div>
+    <div class="contact-item"><small>LINKEDIN</small><strong>Rémy Barranco</strong><div><a href="https://www.linkedin.com/in/rémy-brc034/" target="_blank" rel="noopener">Voir le profil</a></div></div>
+  </div>
+</section>
+</main>
+
+<footer>
+  <div class="footer-brand"><img src="assets/logo-footer-white.png" alt="Rémy Barranco — Skipper"></div>
+  <p>Capitaine 200 • Marin professionnel</p>
+  <p>© 2026 Rémy Barranco — Skipper</p>
+  <a href="mentions-legales.html">Mentions légales</a> · <a href="cgv.html">CGV professionnelles</a>
+</footer>
+<script src="script.js"></script>
+</body>
+</html>

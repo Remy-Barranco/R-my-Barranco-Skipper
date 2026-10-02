@@ -1,0 +1,34 @@
+V16 — Notes internes d'audit du simulateur
+
+Principes verrouillés
+- Le client décrit la mission ; il ne choisit jamais une catégorie ENIM.
+- Fonction réellement occupée != simple tâche effectuée à bord.
+- Une catégorie présente dans la matrice ne prouve pas à elle seule que le titre détenu donne accès à la fonction.
+- Si catégorie, prérogative ou régime de cotisations restent incertains : étude manuelle, aucun prix inventé.
+- Les jours sociaux sont des jours civils touchés.
+
+Correspondances directement vérifiées dans tableau-classement-categoriel.xlsx
+Plaisance professionnelle :
+- Yachting cabotage international : Chef de bord 12 ; Equipier 8.
+- Yachting navigation côtière : Chef de bord 6 ; Equipier 3.
+- Navigation côtière : Patron breveté <4 UMS 6 ; [4,15[ 9 ; >=15 12.
+- Navigation côtière : Mécanicien certificat 250 kW [4,15[ = 6 ; autres cases non renseignées.
+- Navigation côtière : Matelot 4 ; Matelot qualifié >3 ans avec brevet capitaine 5.
+- Cabotage national/international/long cours : Capitaine 15 ; Matelot 4 ; Matelot >5 ans avec certificat 5.
+
+Cultures marines :
+- Marin chef d'entreprise 6 ; Capitaine de navire 8 ; chef entreprise apte conchylicole 8 ; cadre apte conchylicole 7 ; cadre 5 ; chef équipe apte conchylicole 5 ; chef équipe 4 ; matelot ouvrier apte conchylicole 4 ; matelot ouvrier 3.
+Ces valeurs sont classables mais l'accès effectif à la fonction reste à confirmer : V16 n'affiche donc pas automatiquement un prix pour ces postes.
+
+Codes de classement :
+- Commerce : matelot titulaire Capitaine 200 ou supérieur, >21 ans et 3 ans de navigation effective pont au commerce : classement 5 au lieu de 4.
+
+Cas étalons conservés
+- Corsica Linea : fonction réelle Chef veilleur -> catégorie 7.
+- Convoyage Lagoon 620 : fonction réelle Marin/Equipier -> catégorie 8 dans le cas yachting cabotage international.
+- CAP CROISIERE 6 : cas NUC côtier ; le calcul des taux doit utiliser le cas documenté 19,30 % / 15,75 % lorsque les caractéristiques correspondantes sont renseignées.
+
+Limites volontaires
+- Pêche : matrice de classement présente, mais commandement et plusieurs fonctions dépendent de titres pêche spécifiques ; étude.
+- Remorquage/pilotage/lamanage et travaux maritimes : matrice dépend fortement du type précis de navire, de la puissance et/ou de la jauge ; étude tant que l'arbre complet n'est pas intégré.
+- Les taux de cotisations hors arbre commerce/plaisance documenté ne sont pas extrapolés.
